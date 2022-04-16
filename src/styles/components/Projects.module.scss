@@ -1,0 +1,17 @@
+@import '../settings.scss';
+
+.projectsContainer {
+  margin-bottom: $navHeight;
+}
+
+.bestIcon {
+  color: red;
+}
+
+.greenIcon {
+  color: green;
+}
+
+.postrIcon {
+  color: $primary;
+}

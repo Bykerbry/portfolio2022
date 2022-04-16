@@ -1,0 +1,35 @@
+@import '../settings.scss';
+
+.bannerContainer {
+    background: url('../../assets/portfolio-hero2.jpg') center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.bannerContainer > h1 {
+    text-align: center;
+    font-weight: 400;
+    color: $white;
+    padding: $xxl;
+}
+
+.bannerLink {
+    color: $white;
+    border: 1px solid $white;
+    border-radius: $xs;
+    background: none;
+    padding: $s $l;
+    transition: $basic;
+    cursor: pointer;
+}
+
+.bannerLink:hover {
+    background: $white;
+    color: $black;
+}

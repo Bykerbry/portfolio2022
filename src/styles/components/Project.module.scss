@@ -1,0 +1,41 @@
+@import '../settings.scss';
+
+.projectContainer {
+  margin-top: $xxl;
+  
+}
+
+.projectHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $l;
+}
+
+.projectDesc {
+  text-align: justify;
+}
+
+.playerWrapper {
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hr{
+  background: $accent;
+  height: 2px;
+  margin-top: $xxl;
+}
+
+@media screen and (min-width: 768px) {
+  // .projectDesc {
+  //   text-align: initial;
+  // }
+}

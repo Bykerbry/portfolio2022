@@ -1,0 +1,110 @@
+@import '../settings.scss';
+
+.homeContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: url('../../assets/portfolio-hero2.jpg') top center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.imgOverlay {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7.5rem;
+    color: $white;
+    align-items: center;
+    text-align: center;
+    padding: $xl;
+}
+
+.imgOverlayText > * {
+    font-weight: 600;
+    font-family: 'Open Sans';
+}
+.imgOverlayText > h1 {
+    font-size: 1.5rem;
+}
+
+.imgOverlayText > h4 {
+    font-size: 1rem;
+    margin-bottom: $s;
+}
+
+.circleBIcon {
+    filter: invert(1);
+    height: 75px;
+    width: 75px;
+}
+
+.riddleText {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.subText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.logo {
+    height: $xl;
+    margin: $s $s 0 $s;
+}
+
+.iconBoxesContainer {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .homeContainer {
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .circleBIcon {
+        height: 100px;
+        width: 100px;
+    }
+
+    .imgOverlay {
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .imgOverlayText > h1 {
+        font-size: $xxl;
+    }
+
+    .subText {
+        font-size: $xl;
+    }
+    
+    .iconBoxesContainer {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .imgOverlayText > * {
+        font-weight: 600;
+        font-family: 'Open Sans';
+    }
+
+    .imgOverlayText > h4 {
+        margin-bottom: $s;
+    }
+
+    .subText {
+        font-size: $xl;
+    }
+}
+

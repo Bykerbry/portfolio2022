@@ -1,0 +1,62 @@
+@import '../settings.scss';
+
+.container {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba($color: $primary, $alpha: .92);
+    z-index: 1;
+    height: $navHeight;
+}
+
+.name {
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    height: 30px;
+    margin: $xl;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.menuIcon {
+    color: $white;
+    margin-right: $xl;
+    cursor: pointer;
+}
+
+.menuIcon:hover {
+    color: $grey;
+}
+
+.desktopLinksContainer {
+    display: none;
+}
+
+.navLinks {
+    margin: $m;
+}
+
+.navLinks > a {
+    color: $white;
+    margin: 0 $m;
+    cursor: pointer;
+    transition: $basic;
+}
+
+.navLinks > a:hover,
+.navLinks > a:focus {
+    color: $grey;
+}
+
+
+@media screen and (min-width: 768px) {
+    .desktopLinksContainer {
+        display: block;
+    }
+    .mobileLinksContainer {
+        display: none;
+    }
+}

@@ -1,0 +1,128 @@
+@import './settings.scss';
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    background: $accent;
+    border: 1px solid $accent;
+    border-radius: $xs;
+    color: $white;
+    padding: $s $l;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    outline-color: $accent;
+    transition: $basic;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: $white;
+    color: $accent;
+}
+
+
+
+a.active {
+    background: $accent;
+    color: $white;
+    font-weight: 600;
+}
+
+.section-header {
+    color: $grey;
+    font-size: $xl;
+    margin: $xl 5vw;
+    display: block;
+}
+
+.section-header::after {
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    background: $accent;
+    margin: $s $l;
+}
+
+.section-subheader {
+    margin: auto 5vw;
+}
+
+.section-body {
+    max-width: 300px;
+    margin: $xl auto;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+  
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+  
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.resume > canvas {
+    margin: $xl auto;
+    border: 1px solid black;
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media screen and (min-width: 425px) {
+    .section-body {
+        max-width: 375px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .section-body {
+        max-width: 500px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    a.active {
+        color: $accent !important;
+        background: none;
+    }
+
+    .section-body {
+        max-width: 675px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .section-body {
+        max-width: 850px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .section-body {
+        max-width: 1000px;
+    }
+}

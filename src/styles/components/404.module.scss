@@ -1,0 +1,22 @@
+@import '../settings.scss';
+
+.errorPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+.errorMsg {
+    margin: 5vw;
+}
+
+.homeLink {
+    color: $accent;
+    transition: $basic;
+}
+
+.homeLink:hover {
+    color: $black;
+}

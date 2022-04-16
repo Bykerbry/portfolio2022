@@ -1,0 +1,108 @@
+@import '../settings.scss';
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+}
+
+.socialLinksContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 0 $xl 0;
+}
+
+.socialLinksContainer > div {
+    display: flex;
+    align-items: center;
+    margin: $xl 0;
+}
+
+.socialIcon {
+    color: $accent;
+    cursor: pointer;
+    margin: $six $m 0 0;
+    transition: $basic;
+}
+
+.socialIcon:hover {
+    color: $black;
+}
+
+.socialLink > a {
+    color: $black;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: $basic;
+}
+.socialLink:hover > a{
+    color: $accent;
+}
+
+.socialLinksContainer > div > div > p {
+    margin: 0;
+    font-weight: 700;
+}
+
+// Form
+
+.inputContainer > input,
+.textAreaContainer > textarea {
+    width: 100%;
+    margin-top: $xl;
+    padding: $s;
+    border: 1px solid $grey;
+    border-radius: 2px;
+    resize: none;
+}
+
+.textAreaContainer > textarea {
+    height: 7.5rem;
+}
+
+
+.submitBtnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.submitBtnContainer > button {
+    margin: $l;
+}
+
+.submitBtnContainer > button:disabled {
+    opacity: .75;
+    cursor: default;
+    color: $white;
+    background-color: $accent;
+}
+
+.errorMsg {
+    color: red;
+    font-size: $m;
+}
+
+.thankYouMsg {
+    color: $accent;
+    margin-top: $l;
+}
+
+@media screen and (min-width: 1024px) {
+    .contentContainer {
+        flex-direction: row;
+        max-width: 900px;
+    }
+    .socialLinksContainer {
+        width: 400px;
+        margin: 4rem $xl 0 0;
+    }
+    .contactForm {
+        flex: 1;
+    }
+
+}

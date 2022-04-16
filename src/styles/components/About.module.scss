@@ -1,0 +1,84 @@
+@import '../settings.scss';
+
+.skillsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.html5 {
+    color: rgb(227, 79, 38);
+} 
+
+.css3 {
+    color: rgb(33, 76, 229);
+}
+
+.js {
+    color: rgb(240, 212, 61);
+}
+
+.angular {
+    color: rgb(221, 27, 22);
+}
+
+.react {
+    color: rgb(94, 212, 244);
+}
+
+.jquery {
+    color: rgb(8, 101, 166);
+}
+
+.node {
+    color: rgb(37, 188, 97);
+}
+
+.git {
+    color: rgb(240, 80, 50);
+}
+
+.csharp {
+    color: rgb(102, 2, 124);
+}
+
+.aboutContentContainer {
+    margin-top: $xl;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutContentContainer  h3 {
+    text-align: center;
+}
+
+.aboutContentContainer  p {
+    text-align: justify;
+}
+
+.me {
+    object-fit: cover;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: $s;
+    margin: 0 auto $xl auto;
+}
+
+  @media screen and (min-width: 768px) {
+    .aboutContentContainer {
+        flex-wrap: nowrap;
+    }
+
+    .aboutContentContainer  h3 {
+        text-align: initial;
+    }
+
+    .aboutContentContainer  p {
+        text-align: initial;
+    }
+
+    .me {
+        margin-right: $xxl;
+        margin-left: 0;
+    }
+}

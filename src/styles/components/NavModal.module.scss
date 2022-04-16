@@ -1,0 +1,45 @@
+@import '../settings.scss';
+
+.modal {
+    background-color: $white;
+    padding: $m 0;
+    height: fit-content;
+    width: 80vw;
+    flex-direction: column;
+    display: flex;
+    margin-top: $navHeight;
+    border-radius: $xs;
+    outline-color: $accent;
+    position: relative;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: $black, $alpha: .5);
+}
+
+.navLinks {
+    margin: 0
+}
+
+.navLinks > a {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: $s $xl;
+    cursor: pointer;
+}
+
+.navLinks > a:hover,
+.navLinks > a:focus {
+    background: $accent;
+    color: $white;
+    font-weight: 600;
+}
+
